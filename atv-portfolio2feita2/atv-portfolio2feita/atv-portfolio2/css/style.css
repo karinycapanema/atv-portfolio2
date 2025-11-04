@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --main-bg-color: brown;
+  font-size: calc(0.9375rem, calc(0.9119rem + 0.1136vw), 1rem);
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+}
+
+main {
+  margin: 0 5vw 0 5vw;
+}
+
+a {
+  text-decoration: none;
+  /* remove o sublinhado dos links */
+  color: black;
+  /* altera a cor de todos os links das páginas */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+header nav ul {
+  display: flex;
+  gap: 10px;
+  width: fit-content;
+  margin: 3vw auto 10vw auto;
+  border: 1px solid #b6b6b6;
+  border-radius: 50px;
+  padding: 3px;
+}
+
+header nav ul li a {
+  padding: 5px 10px 5px 10px;
+  border-radius: 50px;
+  display: block;
+}
+
+header nav ul li a:hover,
+header nav ul li a.atual {
+  background: black;
+  color: white;
+}
+
+section.banner h1 {
+  font-size: 2rem;
+  margin: 0 0 6vw 0;
+}
+
+section.banner h1 span {
+  font-weight: bold;
+}
+
+section.banner p {
+  color: #757575;
+}
+
+section.post>ul>li {
+  background: white;
+  border: 1px solid #cecccc;
+  box-shadow: 1px 1px 2px #ebebeb;
+  border-radius: 5px;
+  padding: 5vw;
+  margin: 0 0 10vw 0;
+}
+
+section.post h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 0 0 5px 0;
+}
+
+section.post ul li p {
+  color: #757575;
+  line-height: 1.5rem;
+}
+
+section.post ul li ul {
+  display: flex;
+  gap: 10px;
+}
+
+section.post ul li ul li {
+  background: #d3d2d2;
+  padding: 2px 4px;
+  border-radius: 50px;
+}
+
+footer p {
+  color: #7c7c7c;
+  background: white;
+  padding: 10px;
+  border-radius: 50px;
+  margin: 5px 5vw 10px 5vw;
+  text-align: center;
+
+}
+
+/* conect */
+
+section.rede ul li {
+  background: white;
+  border: 1px solid #757575;
+  text-align: center;
+  margin: 8px;
+}
+
+section.rede ul li svg {
+  width: 5vw;
+}
+
+@media only screen and (min-width: 768px) {
+
+  section.banner,
+  section.post ul,
+  section.rede ul,
+  section.texto,
+  section.projects
+ {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1000px;
+    margin: 0 auto 0 auto;
+    gap: 30px;
+    border-color: #757575;
+  }
+
+  section.post>ul>li,
+  section.rede>ul>li,
+  section.eco>ul>li {
+    padding: 1vw;
+    margin: 0;
+    border-color: #757575;
+    border-radius: 10px;
+  }
+
+  footer p {
+    max-width: 1000px;
+    margin: 3vw auto 2vw auto;
+  }
+
+  section.rede ul li svg {
+    width: 2rem;
+  }
+
+  section.eco ul {
+    max-width: 1000px;
+    margin: 0 auto 0 auto;
+  }
+
+}
+
+section.texto span {
+  font-weight: bold;
+}
+
+section.texto h1 {
+  font-size: 1.5vw;
+}
+section.eco ul li{
+  background: #FFFFFE;
+ margin: 5vw;
+ padding: 3vw;
+ border-color: #757575;
+}
+section.eco h2{
+  font-weight: bold;
+  font-size: 1.3vw;
+}
+section.eco p{
+  color: #757575;
+  margin: 2vw 0 2.3vw 0;
+}
+section.projects p{
+  color: #757575;
+}
+section.projects h1{
+  font-size: 2rem;
+  font-weight: bold;
+}
